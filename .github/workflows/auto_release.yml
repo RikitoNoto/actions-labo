@@ -40,5 +40,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: ${{ github.event.inputs.tag }}
-          tag_name: ${{ github.event.inputs.tag }}
+          name: ${{ github.ref  }}
+          # tag_name: ${{ github.ref  }}
