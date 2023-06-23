@@ -41,3 +41,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           name: ${{ github.event.inputs.tag }}
+          tag_name: ${{ github.event.inputs.tag }}
