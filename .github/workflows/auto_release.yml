@@ -34,6 +34,5 @@ jobs:
       - name: Create GitHub release
         uses: softprops/action-gh-release@v1
         with:
-          files: dist/*  # リリースに含めるファイルやディレクトリを指定してください
           token: ${{ secrets.GITHUB_TOKEN }}
           release_name: Release ${{ github.ref }}
